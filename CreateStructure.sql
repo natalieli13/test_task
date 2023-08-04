@@ -15,7 +15,7 @@ create table Basket (
     ID_SKU int foreign key references SKU(ID),
     ID_Family int foreign key references Family(ID),
     Quantity int check (Quantity >= 0),
-    Value int check (Value >= 0),
+    Value decimal(18,2) check (Value >= 0),
     PurchaseDate datetime default GETDATE(),
     DiscountValue int
 );
