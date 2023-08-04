@@ -22,5 +22,5 @@ as
 		Family.SurName = @FamilySurName)
 
 	update Family
-    SET BudgetValue = BudgetValue - @BasketSum
+    set BudgetValue = BudgetValue - @BasketSum
     where  SurName = @FamilySurName;
