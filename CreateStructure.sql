@@ -17,5 +17,5 @@ create table Basket (
     Quantity int check (Quantity >= 0),
     Value decimal(18,2) check (Value >= 0),
     PurchaseDate datetime default GETDATE(),
-    DiscountValue int
+    DiscountValue decimal(18,2)
 );
